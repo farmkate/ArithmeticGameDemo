@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{337B92B7-EEF9-41AD-98A8-B08CB6C48B53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{018514DC-9DC2-45C0-B057-9852E80DAFDA}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ArithmeticGame", "src\ArithmeticGame\ArithmeticGame.xproj", "{8C6AA2E5-886F-4DA9-8F7E-D0B45A656901}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C6AA2E5-886F-4DA9-8F7E-D0B45A656901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C6AA2E5-886F-4DA9-8F7E-D0B45A656901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C6AA2E5-886F-4DA9-8F7E-D0B45A656901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C6AA2E5-886F-4DA9-8F7E-D0B45A656901}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8C6AA2E5-886F-4DA9-8F7E-D0B45A656901} = {337B92B7-EEF9-41AD-98A8-B08CB6C48B53}
+	EndGlobalSection
+EndGlobal

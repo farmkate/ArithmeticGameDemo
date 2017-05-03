@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace ArithmeticGame.ViewModels
+{
+    public class AddUserViewModel
+    {
+        [Required]
+        [Display(Name = "User Name")]
+        public string Username { get; set; }
+
+        [Required]
+        [Compare("Verify")]
+        [MinLength(6, ErrorMessage = "Your password must be at least 6 characters in length")]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+
+        [Required]
+        [DataType(DataType.Password)]
+        [Display(Name = "Verify Password")]
+        public string Verify { get; set; }
+
+        [Required(ErrorMessage = "You must enter a username")]
+        public string Email { get; set; }
+
+    }
+}
