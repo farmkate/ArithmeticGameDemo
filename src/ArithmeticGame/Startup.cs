@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using ArithmeticGame.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace ArithmeticGame
 {
@@ -34,6 +36,9 @@ namespace ArithmeticGame
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+            services.AddDbContext<GameDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            
             services.AddApplicationInsightsTelemetry(Configuration);
 
             services.AddMvc();
@@ -65,7 +70,7 @@ namespace ArithmeticGame
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=User}/{action=Index}/{id?}");
             });
         }
     }

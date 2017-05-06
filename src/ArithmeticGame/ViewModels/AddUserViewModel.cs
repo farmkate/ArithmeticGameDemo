@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using ArithmeticGame.Models;
 
 namespace ArithmeticGame.ViewModels
 {
@@ -25,6 +25,32 @@ namespace ArithmeticGame.ViewModels
 
         [Required(ErrorMessage = "You must enter a username")]
         public string Email { get; set; }
+
+        [Required]
+        [Display(Name = "Category")]
+        public int CategoryID { get; set; }
+
+
+        public List<SelectListItem> Categories { get; set; }
+
+        public AddUserViewModel()
+        { }
+
+        public AddUserViewModel(IEnumerable<UserCategory> categories)
+        {
+
+            Categories = new List<SelectListItem>();
+
+            foreach (UserCategory category in categories)
+            {
+                Categories.Add(new SelectListItem
+                {
+                    Value = (category.ID.ToString()),
+                    Text = category.Name.ToString()
+                });
+            }
+
+        }
 
     }
 }
