@@ -9,15 +9,8 @@ namespace ArithmeticGame.Models
     {
         IEnumerable<GameMenu> GameMenus { get; set; } 
 
-        //public double MultiplicationGame { get; set; }
-        //public double DivisionGame { get; set; }
-        //public double AdditionGame { get; set; }
-        //public double SubtractionGame { get; set; }
-
         public int ID { get; set; }
         public string Name { get; set; }
-
-        //public IList<User> Users { get; set; }
 
     }
 }
