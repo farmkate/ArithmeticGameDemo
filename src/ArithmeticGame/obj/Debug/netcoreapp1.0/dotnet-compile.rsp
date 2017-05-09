@@ -225,5 +225,7 @@ C:\Users\KMDol\mystuff\c#\ArithmeticGame\src\ArithmeticGame\Models\GameMenu.cs
 C:\Users\KMDol\mystuff\c#\ArithmeticGame\src\ArithmeticGame\Models\User.cs
 C:\Users\KMDol\mystuff\c#\ArithmeticGame\src\ArithmeticGame\Models\UserCategory.cs
 C:\Users\KMDol\mystuff\c#\ArithmeticGame\src\ArithmeticGame\ViewModels\AddCategoryViewModel.cs
+C:\Users\KMDol\mystuff\c#\ArithmeticGame\src\ArithmeticGame\ViewModels\AddGameMenuPlayerViewModel.cs
 C:\Users\KMDol\mystuff\c#\ArithmeticGame\src\ArithmeticGame\ViewModels\AddGameMenuViewModel.cs
 C:\Users\KMDol\mystuff\c#\ArithmeticGame\src\ArithmeticGame\ViewModels\AddUserViewModel.cs
+C:\Users\KMDol\mystuff\c#\ArithmeticGame\src\ArithmeticGame\ViewModels\ViewGameMenuViewModel.cs

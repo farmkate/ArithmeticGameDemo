@@ -1,0 +1,19 @@
+﻿@model ArithmeticGame.ViewModels.ViewGameMenuViewModel
+
+@{ 
+    ViewBag.Title = Model.Game.Name;
+}
+
+<ul>
+    @foreach (var gameMenu in Model.Players)
+    { 
+        <li>@gameMenu.User.FullName</li>
+    }
+</ul>
+
+@if (Model.Players.Count == 0)
+{
+    <p><i>No game players yet!</i></p>
+}
+
+<p><a asp-controller="Game" asp-action="AddPlayer" asp-route-id="@Model.Game.ID">Add Player</a></p>

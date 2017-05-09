@@ -1,0 +1,19 @@
+﻿@model ArithmeticGame.ViewModels.AddGameMenuPlayerViewModel
+
+@{ 
+    ViewBag.Title = "Add Player to Game: " + Model.Game.Name;
+}
+
+<form asp-controller="Game" asp-action="AddPlayer" method="post">
+
+    <div class="form-group">
+        <label asp-for="UserID"></label>
+        <select asp-for="UserID" asp-items="@Model.Users"></select>
+        <span asp-validation-for="UserID"></span>
+    </div>
+
+    <input type="hidden" name="GameID" value="@Model.Game.ID" />
+
+    <input type="submit" value="Add Player" />
+
+</form>

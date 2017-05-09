@@ -4,12 +4,12 @@
 
 
 <ul>
-    @foreach (var menu in Model)
+    @foreach (var game in Model)
     {
         <li>
             <a asp-controller="Game"
-               asp-action="Add"
-               asp-route-id="@menu.ID">@menu.Name</a>
+               asp-action="ViewGame"
+               asp-route-id="@game.ID">@game.Name</a>
         </li>
     }
 </ul>
